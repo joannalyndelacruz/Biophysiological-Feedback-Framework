@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Biophysiological Feedback Framework (BFF)
 ## Conceptual Architecture
 
@@ -39,3 +40,6 @@ The objective is not to classify users, but to describe patterns of interaction 
 ---
 
 ##
+=======
+# Biophysiological-Feedback-Framework
+>>>>>>> bc1397843602f69fb2a88744a616138f7f751e4b
