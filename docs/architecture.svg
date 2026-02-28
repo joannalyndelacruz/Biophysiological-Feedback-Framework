@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill: #f7f8fa; stroke: #4a5568; stroke-width: 2; rx: 10; }
+    .engine { fill: #eef2f7; stroke: #2d3748; stroke-width: 2; rx: 12; }
+    .text-title { font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #1a202c; }
+    .text { font-family: Helvetica, Arial, sans-serif; font-size: 16px; fill: #2d3748; }
+    .arrow { stroke: #4a5568; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+      refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <!-- Surface Layer -->
+  <rect x="200" y="40" width="500" height="70" class="box"/>
+  <text x="450" y="80" text-anchor="middle" class="text-title">
+    Surface Layer
+  </text>
+  <text x="450" y="105" text-anchor="middle" class="text">
+    Tracing / Motion / Projection / Logging
+  </text>
+
+  <!-- Arrow 1 -->
+  <line x1="450" y1="110" x2="450" y2="150" class="arrow"/>
+
+  <!-- Input Adapter -->
+  <rect x="200" y="150" width="500" height="70" class="box"/>
+  <text x="450" y="190" text-anchor="middle" class="text-title">
+    Input Adapter
+  </text>
+  <text x="450" y="215" text-anchor="middle" class="text">
+    Event Normalization (Modality-Agnostic)
+  </text>
+
+  <!-- Arrow 2 -->
+  <line x1="450" y1="220" x2="450" y2="260" class="arrow"/>
+
+  <!-- BFF Engine -->
+  <rect x="150" y="260" width="600" height="160" class="engine"/>
+  <text x="450" y="295" text-anchor="middle" class="text-title">
+    BFF Engine
+  </text>
+
+  <text x="450" y="325" text-anchor="middle" class="text">
+    Event Aggregation
+  </text>
+  <text x="450" y="350" text-anchor="middle" class="text">
+    Belief State Update (Uncertainty-Aware)
+  </text>
+  <text x="450" y="375" text-anchor="middle" class="text">
+    Conservative Policy Gating
+  </text>
+
+  <!-- Arrow 3 -->
+  <line x1="450" y1="420" x2="450" y2="460" class="arrow"/>
+
+  <!-- Outputs -->
+  <rect x="200" y="460" width="500" height="50" class="box"/>
+  <text x="450" y="490" text-anchor="middle" class="text-title">
+    Descriptive Outputs (Within-Individual Only)
+  </text>
+</svg>
